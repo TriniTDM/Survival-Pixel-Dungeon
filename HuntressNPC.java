@@ -43,27 +43,27 @@ public class HuntressNPC extends NPC {
 
 	private boolean seenBefore = false;
 	private static final String[] MESSAGES ={
-		" Ah ha, good to see you safe!",
+		" Aha, good to see you're safe!",
 		" Wanna buy some fresh meat, pardner?",
-		" May the good Blood guide your way",
+		" May the good Blood guide your way.",
 		" Did you hear about the plague that ravages the underground city?",
 		" Don't wander too deep, it's dangerous down there.",
 		//" Do you hear the graveyard murmurs? Then it's almost time",
-		" They said the Drawves dug up the way to Hell, but I don't know if it was true",
+		" They said the Drawves dug up the way to Hell, but I don't know if it was true.",
 		//" Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!",
-		" Well, eat up already? Wanna buy some more?",
-		" When I go hunting, I often pray to Shub-Niggurath, lord of the wood",
+		" Well, eat up already! Wanna buy some more?",
+		" When I go hunting, I often pray to Shub-Niggurath, lord of the wood.",
 		//" Ia! Shub-Niggurath! The Black Goat of the Woods with a Thousand Young!",
 		//" Ia! Ia! Ia! Cthulhu fhtagn!",
 		" Whatever you do, don't mess with the Cult of blood, my friend.",
 		//" Honestly, I would never descend to the caves below the underground trading post. Some says the Gnolls take up residence there.",
-		" Beware of the goblins in the deeper floor, my friend",
+		" Beware of the goblins in the deeper floors, my friend.",
 		" I heard that Loran is falling apart.",
-		" If you visit Loran, be sure to bring along a silver sword",
-		" If you visit Loran, be sure to bring along silver bullets",
-		" Some says there are werewolves in Loran, but I don't know if it was true",
+		" If you visit Loran, be sure to bring along a silver sword.",
+		" If you visit Loran, be sure to bring along silver bullets.",
+		" Some say there are werewolves in Loran, but I don't know if it is true.",
 		" Beware of the beasts of Loran.",
-		" If you visit Loran, make sure that you have some torches",
+		" If you visit Loran, make sure that you have some torches.",
 		" If you want to get to Loran, the safest way is to go through the old, abandoned prison.",
 	};
 	@Override
@@ -71,7 +71,7 @@ public class HuntressNPC extends NPC {
 		
 		if (!Quest.given && Dungeon.level.heroFOV[pos]) {
 			if (!seenBefore) {
-				yell( "A new face, are ya? The road ahead is long and dangerous. Wanna buy some supply?" );
+				yell( "A new face, are ya? The road ahead is long and dangerous. Wanna buy some supplies?" );
 			}
 			seenBefore = true;
 			sprite.turnTo( pos, Dungeon.hero.pos );
